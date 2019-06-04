@@ -1,0 +1,44 @@
+.body-wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100px auto 100px;
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+}
+
+.background-1 {
+  background: linear-gradient(to bottom, rgba(#000, 0.7), rgba(#000, 0.5), rgba(#000, 0.7));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+// .background-1 {
+//   background: linear-gradient(to bottom, rgba(#000, 0.6), rgba(#000, 0.4), rgba(#000, 0.8)),
+//     url('../assets/images/festival-crowd.webp');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+// }
+
+// .background-2 {
+//   background: linear-gradient(to bottom, rgba(#ec38bc, 0.8), rgba(#7303c0, 0.8), rgba(#03001e, 0.8)),
+//     url('../assets/images/festival-crowd.jpg');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+// }
+
+// .background-3 {
+//   background: linear-gradient(to bottom, rgba(#D76D77, 0.8), rgba(#3A1C71, 0.8)),
+//     url('../assets/images/festival-crowd.jpg');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+// }
+
+.content {
+  display: block;
+  margin: 0;
+}

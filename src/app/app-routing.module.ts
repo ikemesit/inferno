@@ -1,10 +1,42 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { FaqComponent } from './faq/faq.component';
+import { HomeComponent } from './home/home.component';
+import { TicketsComponent } from './tickets/tickets.component';
+import { WhatComponent } from './what/what.component';
+import { WhereComponent } from './where/where.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
+  {
+    path: 'what',
+    component: WhatComponent,
+  },
+  {
+    path: 'where',
+    component: WhereComponent,
+  },
+  {
+    path: 'tickets',
+    component: TicketsComponent,
+  },
+  {
+    path: 'faq',
+    component: FaqComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

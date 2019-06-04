@@ -1,0 +1,153 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h4 class="page-header">FAQs</h4>
+      <!-- <hr> -->
+    </div>
+  </div>
+  <div class="row y-padding-50">
+    <!-- <div class="col-3 y-padding-bottom-50">
+      <div class="btn-group sticky-dropdown"
+        dropdown>
+        <button id="button-basic"
+          dropdownToggle
+          type="button"
+          class="btn btn-light btn-lg btn-block dropdown-toggle"
+          aria-controls="dropdown-basic">
+          Table of Content<span class="caret"></span>
+        </button>
+        <ul id="dropdown-basic"
+          *dropdownMenu
+          class="dropdown-menu"
+          role="menu"
+          aria-labelledby="button-basic">
+          <li role="menuitem"
+            (click)="toggleDate = !toggleDate"><a class="dropdown-item">Date</a></li>
+          <li role="menuitem"><a class="dropdown-item">Location</a></li>
+          <li role="menuitem"><a class="dropdown-item">Tickets & RFID Wristbands</a></li>
+          <li role="menuitem"><a class="dropdown-item">Transportation</a>
+          <li role="menuitem"><a class="dropdown-item">Free Shuttle Services</a></li>
+          <li role="menuitem"><a class="dropdown-item">Accommodation</a></li>
+          <li role="menuitem"><a class="dropdown-item">Age Restriction</a></li>
+          <li role="menuitem"><a class="dropdown-item">Altitude Vending</a></li>
+          <li role="menuitem"><a class="dropdown-item">Photo Booths</a></li>
+          <li role="menuitem"><a class="dropdown-item">Items Safety</a></li>
+          <li role="menuitem"><a class="dropdown-item">Lineups</a></li>
+          <li role="menuitem"><a class="dropdown-item">Course of Event</a></li>
+          <li role="menuitem"><a class="dropdown-item">Rules & Regulations</a></li>
+          <li role="menuitem"><a class="dropdown-item">Loss of items</a></li>
+        </ul>
+      </div>
+    </div> -->
+    <div class="col">
+      <accordion [isAnimated]="true"
+        [closeOthers]="oneAtATime">
+        <accordion-group heading="DATE"
+          panelClass="panel-class"
+          [isOpen]="toggleDate">
+          <p>ALTITUDE Music Festival will be held on August 24, 2019 from 3:00PM until 3:00AM.</p>
+        </accordion-group>
+        <accordion-group heading="LOCATION"
+          panelClass="panel-class">
+          <p>Our festival site is located on the beautiful open space of the Tasik Villa International Resort, Port
+            Dickson, Malaysia. It is only 98 kilometers from Kuala Lumpur and about 50 kilometers from Kuala Lumpur
+            International Airport by road. We have attached a map link below to help attendees locate the festival
+            venue.</p>
+        </accordion-group>
+        <accordion-group heading="TICKETS AND RFID WRISTBANDS"
+          panelClass="panel-class">
+          <p>After purchase of tickets, an electronically generated e-mail will be sent out with ticket details and
+            event information. Please print out your e-tickets and bring them to the event venue. RFID wristbands will
+            be given in order to gain access to the event. Also, wristbands are not transferrable, so any persons with
+            damaged wristbands will be denied access into event grounds. There will be a RM20.00 fee to reprint tickets
+            for attendees who fail to present the e-tickets on the event day. There is strictly no replacement for
+            missing tickets and cancellations.</p>
+        </accordion-group>
+        <accordion-group heading="TRANSPORTATION"
+          panelClass="panel-class">
+          <p>Festival goers can access the location by car or Grab. People who wish to use Grab will need the Grab app
+            on their mobile phones. Alternative means of transportaion is by bus from the TBS (Terminal Bersepadu
+            Selatan) to Seremban, thereafter another bus to Port Dickson. There is no direct buses from Kuala Lumpur to
+            Port Dickson. Also this will mean lots of traffic. Lots of it during peak periods. So please, consider
+            ridesharing – it helps reduce traffic, saves money on gas, and the earth will love you.</p>
+        </accordion-group>
+        <accordion-group heading="FREE SHUTTLE SERVICES"
+          panelClass="panel-class">
+          <p>The organizers of ALTITUDE have made arrangements for free shuttles from Kuala Lumpur to Tasik Villa
+            International Resort, Port Dickson. Registration procedures for this service will be on our website.</p>
+        </accordion-group>
+        <accordion-group heading="ACCOMMODATION"
+          panelClass="panel-class">
+          <p>For those who wish to spend the night in Port Dickson, there are numerous resorts around and also some
+            cheap and affordable hotels in the city.</p>
+        </accordion-group>
+        <accordion-group heading="AGE RESTRICTION"
+          panelClass="panel-class">
+          <p>The entire event is subjected to attendees above the age of 18.</p>
+        </accordion-group>
+        <accordion-group heading="ALTITUDE VENDING"
+          panelClass="panel-class">
+          <p>There will be multiple vending machines located at the festival venue to provide attendees with beverages,
+            soft drinks, water and other snacks. Please note that this is not free and you will need your RFID
+            wristbands to make purchases so please top up at the entrace to the event. Also, we have made arrangements
+            with local food courts to mount stalls at the event venue to provide food and drinks to the public. This can
+            be paid only with cash.</p>
+        </accordion-group>
+        <accordion-group heading="PHOTO BOOTHS"
+          panelClass="panel-class">
+          <p>Scattered around the festival ground will be our customized upside down photo booths to add a twist and
+            capture your wildest experiences. Drop by with friends and loved ones and flick up. Remember you'll need
+            your RFID wristbands to make use of these services.</p>
+        </accordion-group>
+        <accordion-group heading="ITEMS SAFETY"
+          panelClass="panel-class">
+          <p>As your security and the safety of your items is our main concern, we will be providing temporary lockers
+            at the event site for people who need to leave some of their valuable items before proceeding to the main
+            stage. Please note that ALTITUDE is not responsible for any loss of items except for the ones stored in the
+            lockers provided and to that point, please make sure you're in possession of your locker keys at all times.
+          </p>
+        </accordion-group>
+        <accordion-group heading="LINEUPS"
+          panelClass="panel-class">
+          <p>We at ALTITUDE are committed to delivering nothing but the best. Details of lineups and performing acts
+            will be sent out in e-mails as well as will be updated on the event site. Get ready for an exciting line-up
+            of your top international and local performers on stage and be rest assured, we have a lot of surprises in
+            store for this so stay tuned in.</p>
+        </accordion-group>
+        <accordion-group heading="COURSE OF EVENT"
+          panelClass="panel-class">
+          <p>12 hours of non-stop heart-racing electronic dance, trance, house and other genres of music from our list
+            of incredible international and local DJs.</p>
+        </accordion-group>
+        <accordion-group heading="RULES AND REGULATIONS"
+          panelClass="panel-class">
+          <p>We strongly prohibit entry into event venue with any kind of weapons, sharp objects, explosives, fireworks,
+            flammable liquids, illegal substances, drugs, laser pens, pets (no matter how small).
+            Any violations of the above rules or related at the event will lead to an automatic expulsion from festival
+            grounds without any refunds. We strongly encourage good behaviour and respect for one another during the
+            course of the event.</p>
+        </accordion-group>
+        <accordion-group heading="LOSS OF ITEMS"
+          panelClass="panel-class">
+          <p>Lose something at the festival? Head to the Info Booth at event site to see if your item has been
+            recovered. If the Info Booth doesn’t have it you shouldn’t give up yet! Head on over to
+            altitudemusicfestival.com/lost to submit a claim. If a fellow festival attendee turns it in we’ll be able to
+            match it up with you.</p>
+        </accordion-group>
+      </accordion>
+    </div>
+  </div>
+
+
+
+
+  <!-- <h5>Inquiries:</h5>
+  <p>info@altitvde.com</p>
+  <h5>Technical support:</h5>
+  <p>admin@altitvde.com</p>
+
+  <h5>ALTITUDE(Trademark)</h5>
+  <h5>ADDRESS:</h5>
+  <p>5670 Wilshire Blvd, Mid-City West, 90036 Los Angeles, CA</p> -->
+
+</div>

@@ -1,0 +1,33 @@
+.content {
+  display: block;
+  margin: 0;
+
+  &__text {
+    margin-top: 50px;
+    // min-height: 600px;
+    // color: #3e00b3;
+    // background-color: #fff;
+    padding: 20px 0px;
+    border-radius: 8px;
+
+    h4 {
+      font-family: 'Rubik', sans-serif;
+      font-weight: 500;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    p {
+      font-family: 'Rubik', sans-serif;
+      font-weight: 300;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #fff;
+    }
+  }
+}
+
+hr {
+  // border-top: 1px solid rgba(#3e00b3, 0.6);
+  border-top: 1px solid rgba(#fff, 0.4);
+}

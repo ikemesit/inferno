@@ -1,0 +1,75 @@
+.display-text-wrapper {
+  margin-top: 100px;
+  display: block;
+  padding: 0;
+
+  h2 {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 700;
+    // background: linear-gradient(rgb(248, 123, 6),
+    //     rgb(253, 144, 42),
+    //     rgb(89, 180, 255),
+    //     rgb(12, 197, 230));
+    background: linear-gradient(#ec38bc,
+        // #7303c0,
+        #007ff7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 8rem;
+    margin: 0;
+    padding: 0;
+    line-height: 6.5rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.info-text {
+  display: block;
+  margin-top: 100px;
+  color: #fff;
+  padding-left: 20px;
+  padding: 50px 0px 100px 0px;
+  border-radius: 8px;
+  text-align: center;
+
+  p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+}
+
+.centered-logo {
+  width: 100px;
+  height: 100px;
+  margin-top: 100px;
+  opacity: 0.3;
+}
+
+.cta-button {
+  border-radius: 60px;
+  width: 400px;
+  margin-top: 50px;
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2rem;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.custom-date-wrapper {
+  width: 400px;
+  margin-top: 100px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  span {
+    color: rgba(#fff, 0.5);
+    font-size: 4rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+  }
+}
