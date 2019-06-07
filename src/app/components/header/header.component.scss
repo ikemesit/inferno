@@ -108,3 +108,20 @@
   left: 0;
   z-index: 50;
 }
+
+.dropdown-menu {
+  background-color: rgb(9, 0, 58);
+
+  li>a {
+    color: #fff;
+
+    &:hover {
+      background-color: lighten(rgb(9, 0, 58), 10%) !important;
+    }
+  }
+
+  .dropdown-link {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}

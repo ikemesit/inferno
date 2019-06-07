@@ -6,39 +6,6 @@
     </div>
   </div>
   <div class="row y-padding-50">
-    <!-- <div class="col-3 y-padding-bottom-50">
-      <div class="btn-group sticky-dropdown"
-        dropdown>
-        <button id="button-basic"
-          dropdownToggle
-          type="button"
-          class="btn btn-light btn-lg btn-block dropdown-toggle"
-          aria-controls="dropdown-basic">
-          Table of Content<span class="caret"></span>
-        </button>
-        <ul id="dropdown-basic"
-          *dropdownMenu
-          class="dropdown-menu"
-          role="menu"
-          aria-labelledby="button-basic">
-          <li role="menuitem"
-            (click)="toggleDate = !toggleDate"><a class="dropdown-item">Date</a></li>
-          <li role="menuitem"><a class="dropdown-item">Location</a></li>
-          <li role="menuitem"><a class="dropdown-item">Tickets & RFID Wristbands</a></li>
-          <li role="menuitem"><a class="dropdown-item">Transportation</a>
-          <li role="menuitem"><a class="dropdown-item">Free Shuttle Services</a></li>
-          <li role="menuitem"><a class="dropdown-item">Accommodation</a></li>
-          <li role="menuitem"><a class="dropdown-item">Age Restriction</a></li>
-          <li role="menuitem"><a class="dropdown-item">Altitude Vending</a></li>
-          <li role="menuitem"><a class="dropdown-item">Photo Booths</a></li>
-          <li role="menuitem"><a class="dropdown-item">Items Safety</a></li>
-          <li role="menuitem"><a class="dropdown-item">Lineups</a></li>
-          <li role="menuitem"><a class="dropdown-item">Course of Event</a></li>
-          <li role="menuitem"><a class="dropdown-item">Rules & Regulations</a></li>
-          <li role="menuitem"><a class="dropdown-item">Loss of items</a></li>
-        </ul>
-      </div>
-    </div> -->
     <div class="col">
       <accordion [isAnimated]="true"
         [closeOthers]="oneAtATime">
@@ -84,6 +51,17 @@
         <accordion-group heading="AGE RESTRICTION"
           panelClass="panel-class">
           <p>The entire event is subjected to attendees above the age of 18.</p>
+        </accordion-group>
+        <accordion-group heading="CONTACT"
+          panelClass="panel-class">
+          <span>
+            <p>Technical Support: <a href="mailto:admin@altitudemusicfestival.com">admin@altitudemusicfestival.com</a>
+            </p>
+          </span>
+          <span>
+            <p>Enquiries: <a href="mailto:info@altitudemusicfestival.com">info@altitudemusicfestival.com</a></p>
+          </span>
+
         </accordion-group>
         <accordion-group heading="ALTITUDE VENDING"
           panelClass="panel-class">

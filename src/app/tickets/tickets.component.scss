@@ -1,11 +1,29 @@
 .card-header {
-  background-color: #007bff; //#3e00b3;
+  background-color: #5b0cee; //#3e00b3;
   color: #fff;
   font-family: 'Rubik', sans-serif;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid darken(#f7256bcb, 10%);
 }
 
+// .card-sub-header {
+//   background-color: #5b0cee; //#3e00b3;
+//   color: #fff;
+//   font-family: 'Rubik', sans-serif;
+//   font-weight: 400;
+//   padding: 10px 20px;
+//   margin-bottom: 0;
+//   text-transform: uppercase;
+//   text-align: center;
+// }
+
 .ticket-card {
-  height: 400px;
+  height: 550px;
   border-color: transparent;
   background-color: transparent;
 
@@ -13,29 +31,48 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    background-color: #007bff; //rgba(#000, 0.6);
-    border: 2px solid #007bff; //#3e00b3;
+    background-color: #1f0057; //rgba(#000, 0.6);
+    border: 2px solid #1f0057; //#3e00b3;
     border-top: transparent;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 
     a {
-      background-color: #f87b06;
-      border-color: #f87b06;
+      background-color: darken(#f7256bcb, 10%);
+      border-color: darken(#f7256bcb, 10%);
       border-radius: 60px;
+      text-transform: uppercase;
+      font-family: 'Rubik', sans-serif;
+      font-weight: 500;
     }
   }
 
   .card-text {
     padding-left: 15px;
+    min-height: 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
 
     ul {
       padding-left: 0;
 
       li {
         color: #fff;
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-weight: bold;
       }
     }
+  }
+
+  .price-point {
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+    border-top: 1px solid rgba(#fff, 0.9);
+    padding-top: 15px;
   }
 }
 

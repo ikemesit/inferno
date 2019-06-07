@@ -25,9 +25,28 @@
         <a class="nav-link"
           routerLink='tickets'
           routerLinkActive="current">Tickets</a>
-        <a class="nav-link"
-          routerLink='faq'
-          routerLinkActive="current">FAQs</a>
+        <span class="nav-item dropdown"
+          dropdown>
+          <a class="nav-link dropdown-toggle"
+            dropdownToggle
+            (click)="false">Info</a>
+          <ul *dropdownMenu
+            class="dropdown-menu"
+            role="menu">
+            <li>
+              <a class="dropdown-item dropdown-link"
+                routerLink='/'>Line Up</a>
+            </li>
+            <li>
+              <a class="dropdown-item dropdown-link"
+                routerLink='/'>Shuttle Services</a>
+            </li>
+            <li>
+              <a class="dropdown-item dropdown-link"
+                routerLink='faq'>FAQs</a>
+            </li>
+          </ul>
+        </span>
       </nav>
     </div>
   </div>
@@ -60,9 +79,28 @@
         <a class="nav-link"
           routerLink='tickets'
           routerLinkActive="current">Tickets</a>
-        <a class="nav-link"
-          routerLink='faq'
-          routerLinkActive="current">FAQs</a>
+        <span class="nav-item dropdown"
+          dropdown>
+          <a class="nav-link dropdown-toggle"
+            dropdownToggle
+            (click)="false">Info</a>
+          <ul *dropdownMenu
+            class="dropdown-menu"
+            role="menu">
+            <li>
+              <a class="dropdown-item dropdown-link"
+                routerLink='/'>Line Up</a>
+            </li>
+            <li>
+              <a class="dropdown-item dropdown-link"
+                routerLink='/'>Shuttle Services</a>
+            </li>
+            <li>
+              <a class="dropdown-item dropdown-link"
+                routerLink='faq'>FAQs</a>
+            </li>
+          </ul>
+        </span>
       </nav>
     </div>
   </div>

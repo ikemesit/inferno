@@ -22,12 +22,12 @@ export class AppComponent implements OnInit {
       delay: 7000,
       transitionDuration: 2000,
       slides: [
-        { src: 'assets/images/slides/slide1.jpg' },
-        { src: 'assets/images/slides/slide2.jpg' },
-        { src: 'assets/images/slides/slide3.jpg' },
-        { src: 'assets/images/slides/slide4.jpg' },
         { src: 'assets/images/slides/slide5.jpg' },
         { src: 'assets/images/slides/slide6.jpg' },
+        { src: 'assets/images/slides/slide3.jpg' },
+        { src: 'assets/images/slides/slide4.jpg' },
+        { src: 'assets/images/slides/slide1.jpg' },
+        { src: 'assets/images/slides/slide2.jpg' },
         { src: 'assets/images/slides/slide7.jpg' },
       ],
     });
