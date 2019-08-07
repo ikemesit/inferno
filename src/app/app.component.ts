@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 
 import { WindowRef } from './services/window-ref.service';
 
@@ -13,13 +14,17 @@ export class AppComponent implements OnInit {
 
   toggleHeaderStick = false;
 
-  title = 'inferno-web';
+  title = 'Altitude';
 
-  constructor(private windowRef: WindowRef, private renderer: Renderer2) {}
+  constructor(
+    private windowRef: WindowRef,
+    private renderer: Renderer2,
+    private routeRef: Router
+  ) {}
 
   ngOnInit() {
     this.windowRef.nativeWindow.$('body').vegas({
-      delay: 7000,
+      delay: 5000,
       transitionDuration: 2000,
       slides: [
         { src: 'assets/images/slides/slide5.jpg' },
@@ -39,6 +44,14 @@ export class AppComponent implements OnInit {
         this.toggleHeaderStick = true;
       } else if (bodyWrapper.scrollTop < 150) {
         this.toggleHeaderStick = false;
+      }
+    });
+
+    const contentBox: Element = document.querySelector('main.content');
+
+    this.routeRef.events.subscribe(evt => {
+      if (evt instanceof NavigationEnd) {
+        bodyWrapper.scrollTop = 0;
       }
     });
   }

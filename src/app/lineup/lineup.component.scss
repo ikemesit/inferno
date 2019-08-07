@@ -1,0 +1,85 @@
+.content {
+  display: block;
+  margin: 0;
+
+  &__text {
+    margin-top: 50px;
+    padding: 20px 0px;
+    border-radius: 8px;
+
+    h4 {
+      font-family: 'Rubik', sans-serif;
+      font-weight: 500;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    p {
+      font-family: 'Rubik', sans-serif;
+      font-weight: 300;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #fff;
+    }
+  }
+}
+
+hr {
+  border-top: 1px solid rgba(#fff, 0.1);
+  // margin: 0px;
+}
+
+.lineup-header {
+  h4 {
+    margin-bottom: 20px;
+  }
+}
+
+.grid {
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  // max-width: 1000px;
+  list-style: none;
+  text-align: center;
+}
+
+/* Common style */
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  min-width: 320px;
+  max-width: 400px;
+  max-height: 360px;
+  width: 48%;
+  // background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.4;
+}
+
+figure.effect-milo {
+  background: #000;
+}
+
+figure.effect-milo img {
+  max-width: none;
+  width: calc(100% + 40px);
+  opacity: 1;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-10px, 0, 0) scale(1.12);
+  backface-visibility: hidden;
+}
+
+figure.effect-milo:hover img {
+  opacity: 0.8;
+  transform: translate3d(0, 0, 0) scale(1);
+}

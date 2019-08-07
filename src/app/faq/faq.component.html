@@ -7,7 +7,8 @@
   </div>
   <div class="row y-padding-50">
     <div class="col">
-      <accordion [isAnimated]="true"
+      <accordion @fadeInDown
+        [isAnimated]="true"
         [closeOthers]="oneAtATime">
         <accordion-group heading="DATE"
           panelClass="panel-class"

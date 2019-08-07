@@ -16,6 +16,7 @@ import { WindowRef } from './services/window-ref.service';
 import { TicketsComponent } from './tickets/tickets.component';
 import { WhatComponent } from './what/what.component';
 import { WhereComponent } from './where/where.component';
+import { LineupComponent } from './lineup/lineup.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { WhereComponent } from './where/where.component';
     TicketsComponent,
     BaseComponent,
     FaqComponent,
+    LineupComponent,
   ],
   imports: [
     BrowserModule,
